@@ -1,0 +1,306 @@
+/* partes que se repiten encabezado y footer*/
+ /* color al cuerpo de la pag */
+body{
+    background: #004e92; 
+    background: -webkit-linear-gradient(to top, #000428, #004e92);  
+    background: linear-gradient(to top, #000428 , #004e92); 
+    
+} 
+
+/* Quitar las viñetas de las listas */
+ul{
+    list-style: none;
+}
+
+ /* encabezado fondo logo y menu */
+.encabezado {
+    width: auto;
+    height: 50px;
+    margin: 15px 10px 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    opacity: 90%;
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* espacio de logo */
+.encabezado_logo{
+    width: 170px;
+    height: 70px;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    border-radius: none;
+    object-fit: cover;
+    display: inline;
+}
+
+/* tamaño de imagen del encabezado */
+.encabezado_logo img{
+    height: 100%;
+}
+
+/* menu de navegacion del encabezado */
+.encabezado_menu{
+
+    width: 990px;
+    height: 50px;
+    margin: 50px;
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* footer */
+/* footer fondo imagen y enlaces a redes a sociales */
+.fin_pag{
+
+    background-color: #eeeeee;
+    width: auto;
+    height: 30px;
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    border-radius: 20px;
+    opacity: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/* logo del footer */
+.pie_logo{
+
+    border: 10px;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    opacity: 100%;
+    border-radius: none;
+    object-fit: cover;
+    display: inline;
+}
+
+/* politicas */
+.politicas{
+
+    border: 10px;
+    width: 500px;
+    height: auto;
+    padding-left: 100px;
+    text-align: center;
+    font-style: initial;
+
+    display: flex;
+    align-self: center;
+}
+
+/* enlaces para redes sociales */
+.social_media{
+
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    padding-right: 20px;
+    text-align: right;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* finaliza footer */
+/*******************************************************/
+
+
+/* fondo seccion de informacion primer pagina */
+.fondo_medio{
+
+    /* background-color: #035397; */
+    border-radius: 10px;
+
+    width: auto;
+    height: auto;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    border: 3px dotted #5089C6;
+    
+}
+
+/* edicion de los titulos primer pagina */
+.titulo{
+
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+    color: #FFAA4C;
+    font-style: italic;
+    opacity: 100%;
+    font-size: 30px;
+}
+
+/* edicion de los parrafos primer pagina */
+.parrafos{
+
+    width: auto;
+    height: auto;
+    margin: 30px;
+    padding: 20px;
+    text-align: justify;    
+    font-style: oblique;
+    color: #EEEEEE;
+    opacity: 96%;
+    font-size: 18px;
+}
+
+/* video informativo primer pagina */
+.material_ad{
+    width: auto;
+    margin: 50px;
+    padding: 10px;
+    border: #FFAA4C 3px;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ******************************************* */
+/* pagina Contacto */
+/* ******************************************* */
+
+.caja_contacto{
+    padding-left: 350px;
+    padding-top: 120px;
+    display: flex;
+    
+}
+
+.caja_contenido{
+    background-color: #035397;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    align-content: center;
+    
+    border-radius: 20px;
+    color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+textarea{
+    width: 430px;
+    height: 300px;
+    resize: none;
+}
+
+/* ************************************************* */
+/* Testimonios */
+/* ************************************************* */
+/* grid de la pagina de testimonios acomodo de cajas */
+.caja_testimonios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "caja1 caja2"
+    "caja3 caja4";
+}
+/* configuracion de las 4 cajas */
+.caja1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+
+.caja2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+.caja3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+.caja4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+
+/* configuracion texto del testimonio */
+.name_c{
+    grid-area: name_c;
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+    color: #FFAA4C;
+    font-style: italic;
+    opacity: 100%;
+    font-size: 30px;
+}
+/* configuracion de la foto testimonio */
+.foto_usuario{
+    grid-area: foto_usuario;
+    height: 100px;
+    width: 50px;
+}
+.foto_medida{
+
+    height: 50px;
+    width: 50px;
+}
+/* configuracion texto del testimonio */
+ .text_testimonio{
+     margin: 1px;
+     width: 600px;
+     height: 200px;
+     grid-area: text_testimonio;
+     color: #EEEEEE;
+ }
+
+
+ /* Media Querys */
+
+ /* Tablet */
+ @media  screen and (max-width: 1024px){
+    
+ }
+
+  /* Mobile */
+  @media  screen and (max-width: 600px){
+     
+}
