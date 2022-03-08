@@ -52,7 +52,8 @@ ul{
 
 /* menu de navegacion del encabezado */
 .encabezado_nav{
-    padding-right: 50px;
+    padding: 10px;
+    align-items: center;
 }
 
 .menu {
@@ -62,26 +63,22 @@ ul{
 
     width: 100%;
     height: auto;
-    margin: 10px;
-    padding-right: 20px;
-    text-align: right;    
+    margin: 10px;    
+    text-align: center;    
 }
 
-.menu li{
-    list-style: none;
-    padding: 10px;
-}
-
-nav ul li a{
-    display: block;
-    font-size: 1.2rem;
+.nav_enlace{
+    display: flex;
     color: #035397;
     text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
     text-transform: uppercase;
     transition: 0.5s;
     position: relative;
-
 }
+
 
 nav ul li a:hover{
     color: #FFAA4C;
@@ -104,7 +101,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     transform: scaleX(1);
     transform-origin: left;
-    ;
 }
 /* *********************************** */
 
@@ -341,15 +337,95 @@ textarea{
      color: #EEEEEE;
  }
 
+ /* Boton del menu hamburguesa oculto */
+ .btn-open-sidebar{
+     display: none;
+ }
+.oculto{
+    display: none;
+}
+
 /* ************************************************************* */
  /* Media Querys */
+/* ************************************************************* */
 
  /* Tablet */
- @media  screen and (max-width: 1024px){
-    
+ @media  screen and (max-width: 900px){
+     
+    .encabezado{
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+        align-content: center;
+        flex-direction: column;
+    }
+    .menu{
+        width: auto;
+    }
+
+    .fin_pag{
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+        align-content: center;
+    }
+    .social_media{
+        list-style: none;
+        width: auto;
+        flex-direction: column;
+    }
  }
 
   /* Mobile */
-  @media  screen and (max-width: 600px){
-     
+  @media  screen and (max-width: 690px){
+
+    /* menu lateral */
+     .btn-open-sidebar{
+         display: inline-block;
+         background-color: #004e92;
+         border-radius: 5px;
+         padding: 0.5rem 1rem;
+         color: #EEEEEE;
+     }
+     .menu{
+         flex-wrap: wrap;
+         gap: 20px;
+     }
+     .menu{
+        background-color: #5089C6;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+
+    #sidebar:target{
+        transform: translateX(0);
+    }
+    .oculto{
+        display: block;
+    }
+
+    .encabezado{
+        flex-direction: row;
+    }
+
+    .nav_enlace{
+        color: #FFAA4C;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        padding: 0.5rem 1rem;
+        display: inline-block; 
+    }
+
+    
 }

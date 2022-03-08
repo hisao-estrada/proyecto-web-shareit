@@ -17,21 +17,25 @@
                width="200" height="100">
            </div>
            <nav class="encabezado_nav">
-               <ul class="menu">
-                   <li class="menu_item1"> 
-                       <a href="../index.html"> Inicio </a>
+               <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+               <ul class="menu" id="sidebar">
+                   <li class="menu_item"> 
+                       <a class="nav_enlace" href="../index.html"> Inicio </a>
                    </li>
-                   <li class="menu_item2">
-                       <a href="../pages/quienessomos.html"> ¿Quienes somos?</a>
+                   <li class="menu_item">
+                       <a class="nav_enlace" href="../pages/quienessomos.html"> ¿Quienes somos?</a>
                    </li>
-                   <li class="menu_item3">
-                       <a href="../pages/servicios.html"> Servicios</a>
+                   <li class="menu_item">
+                       <a class="nav_enlace" href="../pages/servicios.html"> Servicios</a>
                    </li>
-                   <li class="menu_item4">
-                       <a href="../pages/testimonios.html"> Testimonios </a>
+                   <li class="menu_item">
+                       <a class="nav_enlace" href="../pages/testimonios.html"> Testimonios </a>
                    </li>
-                   <li class="menu_item5">
-                       <a href="../pages/contacto.html"> Contacto </a>
+                   <li class="menu_item">
+                       <a class="nav_enlace" href="../pages/contacto.html"> Contacto </a>
+                   </li>
+                   <li class="menu_item oculto"> <!-- cerrar sidebar -->
+                       <a class="nav_enlace btn-close-sidebar" href="#"> Cerrar </a>
                    </li>
                </ul>
            </nav>  
@@ -62,13 +66,13 @@
         <nav>
             <ul class="social_media">
                 <li>
-                    <a href=""> Whatsapp </a>
+                    <a class="nav_enlace" href=""> Whatsapp </a>
                 </li>
                 <li>
-                    <a href=""> Facebook </a>
+                    <a class="nav_enlace" href=""> Facebook </a>
                 </li>
                 <li>
-                    <a href=""> Instagram </a>
+                    <a class="nav_enlace" href=""> Instagram </a>
                 </li>
             </ul>
         </nav>
