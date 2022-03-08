@@ -126,9 +126,9 @@ nav ul li a:hover::after{
 
 /* logo del footer */
 .pie_logo{
-
+    
     border: 10px;
-    width: 200px;
+    width: auto;
     height: auto;
     margin: 10px;
     padding: 10px;
@@ -142,12 +142,10 @@ nav ul li a:hover::after{
 .politicas{
 
     border: 10px;
-    width: 500px;
+    width: auto;
     height: auto;
-    padding-left: 100px;
     text-align: center;
     font-style: initial;
-
     display: flex;
     align-self: center;
 }
@@ -155,10 +153,9 @@ nav ul li a:hover::after{
 /* enlaces para redes sociales */
 .social_media{
 
-    width: 500px;
+    width: auto;
     height: auto;
     margin: 10px;
-    padding-right: 20px;
     text-align: right;
 
     display: flex;
@@ -350,7 +347,7 @@ textarea{
 /* ************************************************************* */
 
  /* Tablet */
- @media  screen and (max-width: 900px){
+ @media  screen and (max-width: 915px){
      
     .encabezado{
         height: auto;
@@ -364,17 +361,124 @@ textarea{
     }
 
     .fin_pag{
+        width: auto;
         height: auto;
         margin: 10px;
         padding: 20px;
         align-content: center;
     }
+    
+    .pie_logo{
+        width: auto;
+    }
+    .politicas{
+        width: auto;
+    }
+
     .social_media{
         list-style: none;
         width: auto;
         flex-direction: column;
     }
+    .caja_testimonios{
+        width: auto;
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3"
+        "caja4";
+    }
+    .caja1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .caja2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .caja3{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .caja4{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    /* configuracion de la foto testimonio */
+.foto_usuario{
+    display: flex;
+    grid-area: foto_usuario;
+    height: 100px;
+    width: 50px;
+}
+.foto_medida{
+
+    height: 50px;
+    width: 50px;
+}
+/* configuracion texto del testimonio */
+ .text_testimonio{
+     display: flex;
+     margin: 1px;
+     width: auto;
+     height: 200px;
+     grid-area: text_testimonio;
+     color: #EEEEEE;
  }
+ .nombre_user{
+     display: flex;
+ }
+.titulo name_c{
+    width: auto;
+}
+ 
+.caja_contacto{
+    display: flex;
+    border: 20px;
+    padding: 1px;  
+}
+
+.caja_contenido{
+    background-color: #035397;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    align-content: center;
+    
+    border-radius: 20px;
+    color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.fondo_medio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
 
   /* Mobile */
   @media  screen and (max-width: 690px){
@@ -426,6 +530,4 @@ textarea{
         padding: 0.5rem 1rem;
         display: inline-block; 
     }
-
-    
 }
