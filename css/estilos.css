@@ -1,5 +1,12 @@
 /* partes que se repiten encabezado y footer*/
- /* color al cuerpo de la pag */
+
+/* Reseteo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* color al cuerpo de la pag */
 body{
     background: #004e92; 
     background: -webkit-linear-gradient(to top, #004e92, #035397);  
@@ -10,43 +17,44 @@ body{
 /* Quitar las viñetas de las listas */
 ul{
     list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+} 
+
+.vista_mobile {
+    display: none;
 }
 
  /* encabezado fondo logo y menu */
+ .contenedor_encabezado{
+
+    padding: 1rem;
+    position: relative;
+ }
+
 .encabezado {
-    width: auto;
-    height: 50px;
-    margin: 15px 10px 10px 10px;
-    padding: 20px;
-    border: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
     border-radius: 10px;
     background-color: #eeeeee;
-    opacity: 90%;
 
-    /* position: fixed;k */
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 /* espacio de logo */
 .encabezado_logo{
-    width: 200px;
+    width: 180px;
     height: 70px;
-    
-    margin: 10px;
-    border: 10px;
-    padding: 10px;
-    border-radius: none;
-    object-fit: cover;
-    display: inline;
+    padding: 5px;
 }
 
 /* tamaño de imagen del encabezado */
 .encabezado_logo img{
-    width: 100%;
     height: 100%;
 }
 
@@ -57,35 +65,38 @@ ul{
 }
 
 .menu {
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
+    display: flex;
+    margin-bottom: 1px;      
+}
 
-    width: 100%;
-    height: auto;
-    margin: 10px;    
-    text-align: center;    
+.menu_item{
+    margin-left: 1rem;
 }
 
 .nav_enlace{
-    display: flex;
+    display: inline-block;
     color: #035397;
     text-decoration: none;
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
-    display: inline-block;
     text-transform: uppercase;
     transition: 0.5s;
-    position: relative;
 }
 
 
-nav ul li a:hover{
+.nav_enlace:hover{
     color: #FFAA4C;
+}
+
+.nav_social{
+    color: #035397;
+    text-decoration: none;
+    padding: 00.5rem;
+    font-size: 12px;
 }
 /* *********************************** */
 /* Animaciones Nav - subrayado */
-nav ul li a::after{
+.nav_enlace::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -98,7 +109,7 @@ nav ul li a::after{
     transition: transform 0.5s;
 }
 
-nav ul li a:hover::after{
+.nav_enlace:hover::after{
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -107,14 +118,12 @@ nav ul li a:hover::after{
 /* footer */
 /* footer fondo imagen y enlaces a redes a sociales */
 .fin_pag{
-
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 10px;
     background-color: #eeeeee;
-    width: auto;
-    height: 30px;
-    margin: 10px;
-    padding: 20px;
-    border: 10px;
-    border-radius: 20px;
+    
     opacity: 80%;
 
     display: flex;
@@ -140,19 +149,17 @@ nav ul li a:hover::after{
 
 /* politicas */
 .politicas{
-
+    color: black;
+    font-size: smaller;
     border: 10px;
     width: auto;
     height: auto;
-    text-align: center;
     font-style: initial;
-    display: flex;
-    align-self: center;
+    display: flex;   
 }
 
 /* enlaces para redes sociales */
 .social_media{
-
     width: auto;
     height: auto;
     margin: 10px;
@@ -161,47 +168,45 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
 }
+
+
 
 /* finaliza footer */
 /*******************************************************/
 
 
 /* fondo seccion de informacion primer pagina */
-.fondo_medio{
-
-    /* background-color: #035397; */
-    border-radius: 10px;
-
-    width: auto;
-    height: auto;
+.medio{
+    position: relative;
+    padding: 1rem;
     padding-bottom: 1px;
     margin-bottom: 10px;
-    border: 3px dotted #5089C6;
+    border-top: 3px dotted #5089C6;
+    max-width: auto;
+}
+
+.medio_contenedor{
+    /* background-color: #035397; */
+    margin: 1px;
     
+
 }
 
 /* edicion de los titulos primer pagina */
 .titulo{
-
-    width: auto;
-    height: auto;
-    text-align: left;
-    padding: 30px;
+   
     color: #FFAA4C;
     font-style: italic;
-    opacity: 100%;
-    font-size: 30px;
+    opacity: 90%;
+    font-size: 45px;
 }
 
 /* edicion de los parrafos primer pagina */
 .parrafos{
-
-    width: auto;
-    height: auto;
-    margin: 30px;
-    padding: 20px;
+    margin: 5px;
+    line-height: 1.8;
+    padding-bottom: 2rem;
     text-align: justify;    
     font-style: oblique;
     color: #EEEEEE;
@@ -334,46 +339,35 @@ textarea{
      color: #EEEEEE;
  }
 
- /* Boton del menu hamburguesa oculto */
- .btn-open-sidebar{
-     display: none;
- }
-.oculto{
-    display: none;
-}
-
 /* ************************************************************* */
  /* Media Querys */
 /* ************************************************************* */
 
  /* Tablet */
  @media  screen and (max-width: 915px){
-     
-    .encabezado{
+    
+    .contenedor_encabezado{
         height: auto;
-        margin: 10px;
-        padding: 20px;
-        align-content: center;
-        flex-direction: column;
     }
-    .menu{
-        width: auto;
+
+    .encabezado{
+        flex-direction: column;
     }
 
     .fin_pag{
-        width: auto;
-        height: auto;
-        margin: 10px;
-        padding: 20px;
-        align-content: center;
+
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .pie_logo{
-        width: auto;
+        height: auto;
     }
-    .politicas{
-        width: auto;
-    }
+   
 
     .social_media{
         list-style: none;
@@ -449,10 +443,7 @@ textarea{
  .nombre_user{
      display: flex;
  }
-.titulo name_c{
-    width: auto;
-}
- 
+
 .caja_contacto{
     display: flex;
     border: 20px;
@@ -478,56 +469,56 @@ textarea{
     flex-direction: column;
     align-items: center;
 }
-}
 
   /* Mobile */
-  @media  screen and (max-width: 690px){
+  @media  screen and (max-width: 740px){
 
-    /* menu lateral */
-     .btn-open-sidebar{
-         display: inline-block;
-         background-color: #004e92;
-         border-radius: 5px;
-         padding: 0.5rem 1rem;
-         color: #EEEEEE;
-     }
-     .menu{
-         flex-wrap: wrap;
-         gap: 20px;
-     }
-     .menu{
-        background-color: #5089C6;
-        width: 80%;
-        max-width: 400px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        padding: 1rem;
-        transition: transform 0.5s;
-        z-index: 100;
+    .contenedor_encabezado{
+        display: none;
     }
-
-    #sidebar:target{
-        transform: translateX(0);
-    }
-    .oculto{
-        display: block;
-    }
-
-    .encabezado{
-        flex-direction: row;
-    }
-
-    .nav_enlace{
+    
+    .offcanvas-title{
         color: #FFAA4C;
-        text-decoration: none;
-        letter-spacing: 0.1rem;
-        padding: 0.5rem 1rem;
-        display: inline-block; 
+        font-size: 40px;
     }
+
+    .offcanvas-body{
+        background-color: #EEEEEE;
+        opacity: 90%;
+    }
+
+    .nav-item{
+        padding: 3px;
+    }
+    .estilo_nav {
+        padding: 0.5rem;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #035397;
+    }
+
+    .vista_mobile{
+        display: block;
+        margin: auto;
+
+    }
+
+    .menu_item{
+        margin: 1px;
+    }
+    .menu{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .medio{
+        margin-top: 90px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+
+
+  
+
 }
