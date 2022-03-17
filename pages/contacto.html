@@ -82,43 +82,47 @@
 
   
 <div class="medio">
-    <section class="caja_contacto">
+    <section class="container">
         <!-- formulario  -->
         <form action="" method="" enctype="" > 
             <fieldset class="caja_contenido">
                 <legend> ¡Añade tus datos! Nos pondremos en contacto contigo </legend>
-            
-                    <div>
-                        <label for="Nombre">Nombre: </label>
-                        <input type="text" id="Nombre" placeholder="Nombre">
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                  </div>
+
+                  <div class="row g-2">
+                    <div class="col-sm-1">
+                        <input type="tel" class="form-control" placeholder="Lada" aria-label="Lada">
+                      </div>
+                    <div class="col-sm-5">
+                      <input type="tel" class="form-control" placeholder="Telefono" aria-label="Telefono">
                     </div>
-            
-                    <div>
-                        <label for="telefono">Telefono: </label>
-                        <input type="tel" id="telefono" placeholder="Telefono">
-                    </div>
-            
-                    <div>
-                        <label for="correo">E-mail: </label>
-                        <input type="email" id="correo" placeholder="E-mail">
-                    </div>
-                    <div>
-                        <label for="">Me interesa: </label>
-                        <select name="" id="">
-                            <option value="cpw"> Cotizacion Pagina Web</option>
-                            <option value="csf"> Cotizacion Sesion Fotografica </option>
-                            <option value="cv"> Cotizacion De Video </option>
-                            <option value="ce"> Cotizacion De Edicion </option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="">Platicanos de tu idea: </label> <br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <button>Enviar</button>
-                        <button type="reset">Limpiar</button>
-                    </div>
+                    
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Quiero informacion acerca:</option>
+                        <option value="1"> Cotizacion Fotografia </option>
+                        <option value="2"> Cotizacion Video</option>
+                        <option value="3"> Cotizacion Edicion</option>
+                        <option value="4"> Cotizacion Pagina Web</option>
+                      </select>
+                      
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email / Correo</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Platicanos un poco de tu proyecto:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+                      <div class="d-grid gap-2 d-md-block">
+                        <button class="boton " type="button">Enviar</button>
+                        <button class="boton " type="reset">Limpiar</button>
+                      </div>
+                    
          </fieldset>
         </form>
     </section>      

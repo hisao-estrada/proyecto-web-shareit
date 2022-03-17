@@ -21,6 +21,12 @@ ul{
     margin-bottom: 0;
 } 
 
+p{
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+}
+
 .vista_mobile {
     display: none;
 }
@@ -241,7 +247,7 @@ ul{
 }
 
 .caja_contenido{
-    background-color: #035397;
+    
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 50px;
@@ -254,11 +260,31 @@ ul{
     
 }
 
-textarea{
-    width: 430px;
-    height: 300px;
-    resize: none;
+.boton{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #004e92;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+  }
+
+.boton:hover{
+    color: #FFAA4C;
+
 }
+
+
 
 /* ************************************************* */
 /* Testimonios */
@@ -274,6 +300,8 @@ textarea{
 }
 /* configuracion de las 4 cajas */
 .caja1{
+    margin: 5px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -283,6 +311,8 @@ textarea{
 }
 
 .caja2{
+    margin: 5px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -291,6 +321,8 @@ textarea{
     "text_testimonio text_testimonio";
 }
 .caja3{
+    margin: 5px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -299,6 +331,8 @@ textarea{
     "text_testimonio text_testimonio";
 }
 .caja4{
+    margin: 5px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -333,8 +367,8 @@ textarea{
 /* configuracion texto del testimonio */
  .text_testimonio{
      margin: 1px;
-     width: 600px;
-     height: 200px;
+     width: auto;
+     height: auto;
      grid-area: text_testimonio;
      color: #EEEEEE;
  }
