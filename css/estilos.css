@@ -11,7 +11,9 @@ body{
     background: #004e92; 
     background: -webkit-linear-gradient(to top, #004e92, #035397);  
     background: linear-gradient(to top, #004e92 , #035397 ); 
-    
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
 } 
 
 /* Quitar las viñetas de las listas */
@@ -123,14 +125,17 @@ p{
 
 /* footer */
 /* footer fondo imagen y enlaces a redes a sociales */
-.fin_pag{
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
+
+.fin_pag{ 
+
+    max-width: auto;
     border-radius: 10px;
     background-color: #eeeeee;
-    
     opacity: 80%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
 
     display: flex;
     flex-direction: row;
@@ -201,13 +206,19 @@ p{
 
 /* edicion de los titulos primer pagina */
 .titulo{
-   
+   text-align: center;
     color: #FFAA4C;
     font-style: italic;
     opacity: 90%;
     font-size: 45px;
 }
 
+.titulo_cliente{
+    color: #EEEEEE;
+    font-size: 70px;
+    font-style: italic;
+    text-align: center;
+}
 /* edicion de los parrafos primer pagina */
 .parrafos{
     margin: 5px;
@@ -356,13 +367,14 @@ p{
 /* configuracion de la foto testimonio */
 .foto_usuario{
     grid-area: foto_usuario;
-    height: 100px;
-    width: 50px;
+    height: 180px;
+    width: 180px;
+    
 }
 .foto_medida{
-
-    height: 50px;
-    width: 50px;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
 /* configuracion texto del testimonio */
  .text_testimonio{
@@ -457,13 +469,13 @@ p{
 .foto_usuario{
     display: flex;
     grid-area: foto_usuario;
-    height: 100px;
-    width: 50px;
+    height: auto;
+    width: auto;
 }
 .foto_medida{
 
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    width: 100%;
 }
 /* configuracion texto del testimonio */
  .text_testimonio{
@@ -503,7 +515,7 @@ p{
     flex-direction: column;
     align-items: center;
 }
-
+ }
   /* Mobile */
   @media  screen and (max-width: 740px){
 
@@ -551,3 +563,4 @@ p{
     .titulo{
         font-size: 30px;
     }
+}
