@@ -1,0 +1,80 @@
+
+ /* encabezado fondo logo y menu */
+ .contenedor_encabezado{
+
+    padding: 1rem;
+    position: relative;
+    .encabezado {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #eeeeee;
+    
+        /* position: fixed; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+       /* espacio de logo */
+        .encabezado_logo{
+         width: 180px;
+        height: 70px;
+        padding: 5px;
+        }
+
+
+/* tamaño de imagen del encabezado */
+.encabezado_logo img{
+    height: 100%;
+}
+
+/* menu de navegacion del encabezado */
+.encabezado_nav{
+    padding: 10px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    margin-bottom: 1px;      
+}
+
+.menu_item{
+    margin-left: 1rem;
+}
+
+.nav_enlace{
+    display: inline-block;
+    color: #035397;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+    &hover{
+        color: #FFAA4C;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 3px;
+        background-color: #FFAA4C;
+        transform: scale(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+}
+    }
+ }
