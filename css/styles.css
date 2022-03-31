@@ -70,7 +70,7 @@
   transition: 0.5s;
 }
 
-.contenedor_encabezado .encabezado .nav_enlacehover {
+.contenedor_encabezado .encabezado .nav_enlace:hover {
   color: #FFAA4C;
 }
 

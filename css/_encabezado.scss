@@ -54,11 +54,11 @@
     text-transform: uppercase;
     transition: 0.5s;
 
-    &hover{
+    &:hover{
         color: #FFAA4C;
     }
 
-    &:after{
+    &::after{
         content: "";
         position: absolute;
         top: 100%;
