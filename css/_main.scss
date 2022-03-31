@@ -1,0 +1,297 @@
+
+/* fondo seccion de informacion primer pagina */
+.medio{
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    border-top: 3px dotted #5089C6;
+    max-width: auto;
+    .medio_contenedor{
+        /* background-color: #035397; */
+        margin: 1px;
+        
+    
+    }
+}
+
+
+/* edicion de los titulos primer pagina */
+.titulo{
+   text-align: center;
+    color: #FFAA4C;
+    font-style: italic;
+    opacity: 90%;
+    font-size: 45px;
+}
+
+.titulo_cliente{
+    color: #EEEEEE;
+    font-size: 70px;
+    font-style: italic;
+    text-align: center;
+}
+/* edicion de los parrafos primer pagina */
+.parrafos{
+    margin: 5px;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+    text-align: justify;    
+    font-style: oblique;
+    color: #EEEEEE;
+    opacity: 96%;
+    font-size: 18px;
+}
+
+.caja_serv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "serv1 serv2"
+    "serv3 serv4"
+    "serv5 serv6";
+}
+
+.serv1{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c name_c"
+    "text_testimonio text_testimonio";
+}
+
+.serv2{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c name_c"
+    "text_testimonio text_testimonio";
+}
+
+.serv3{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c name_c"
+    "text_testimonio text_testimonio";
+}
+
+.serv4{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c name_c"
+    "text_testimonio text_testimonio";
+}
+
+.serv5{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c name_c"
+    "text_testimonio text_testimonio";
+}
+
+.serv6{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c name_c"
+    "text_testimonio text_testimonio";
+}
+
+
+
+.boton_iniciar{
+    padding: 0;
+    border-style: none;
+    cursor: pointer;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+    padding: 5px;
+    transition: 1s;
+}
+.boton_iniciar:hover{
+    background-color: #FFAA4C;
+    letter-spacing: 1px;
+}
+
+/* video informativo primer pagina */
+.material_ad{
+    width: auto;
+    margin: 50px;
+    padding: 10px;
+    border: #FFAA4C 3px;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ******************************************* */
+/* pagina Contacto */
+/* ******************************************* */
+
+.caja_contacto{
+    padding-left: 350px;
+    padding-top: 120px;
+    display: flex;
+    
+}
+
+.caja_contenido{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    align-content: center;
+    
+    border-radius: 20px;
+    color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.boton{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #004e92;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+
+    &:hover{
+        color: #FFAA4C;
+    
+    }
+  }
+
+
+
+
+
+/* ************************************************* */
+/* Testimonios */
+/* ************************************************* */
+/* grid de la pagina de testimonios acomodo de cajas */
+.caja_testimonios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "caja1 caja2"
+    "caja3 caja4";
+}
+/* configuracion de las 4 cajas */
+.caja1{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+
+.caja2{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+.caja3{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+.caja4{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name_c foto_usuario"
+    "text_testimonio text_testimonio";
+}
+
+/* configuracion texto del testimonio */
+.name_c{
+    grid-area: name_c;
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 30px;
+    color: #FFAA4C;
+    font-style: italic;
+    opacity: 100%;
+    font-size: 30px;
+}
+/* configuracion de la foto testimonio */
+.foto_usuario{
+    grid-area: foto_usuario;
+    height: 180px;
+    width: 180px;
+    
+}
+.foto_medida{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+/* configuracion texto del testimonio */
+ .text_testimonio{
+     margin: 1px;
+     width: auto;
+     height: auto;
+     grid-area: text_testimonio;
+     color: #EEEEEE;
+ }
+
+/* ************************************************************* */
+ /* Media Querys */
+/* ************************************************************* */
+
