@@ -70,7 +70,7 @@
   transition: 0.5s;
 }
 
-.contenedor_encabezado .encabezado .nav_enlacehover {
+.contenedor_encabezado .encabezado .nav_enlace:hover {
   color: #FFAA4C;
 }
 
@@ -97,118 +97,6 @@
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
-}
-
-/* footer */
-/* footer fondo imagen y enlaces a redes a sociales */
-.fin_pag {
-  max-width: auto;
-  border-radius: 10px;
-  background-color: #eeeeee;
-  opacity: 80%;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* logo del footer */
-  /* politicas */
-  /* enlaces para redes sociales */
-}
-
-.fin_pag .pie_logo {
-  border: 10px;
-  width: auto;
-  height: auto;
-  margin: 10px;
-  padding: 10px;
-  opacity: 100%;
-  border-radius: none;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: inline;
-}
-
-.fin_pag .politicas {
-  color: black;
-  font-size: smaller;
-  border: 10px;
-  width: auto;
-  height: auto;
-  font-style: initial;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.fin_pag .social_media {
-  width: auto;
-  height: auto;
-  margin: 10px;
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.fin_pag .social_media .nav_social {
-  color: #035397;
-  text-decoration: none;
-  padding: 00.5rem;
-  font-size: 12px;
-}
-
-/* finaliza footer */
-/*******************************************************/
-/* Reseteo */
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* color al cuerpo de la pag */
-body {
-  background: #004e92;
-  background: -webkit-gradient(linear, left bottom, left top, from(#004e92), to(#035397));
-  background: linear-gradient(to top, #004e92, #035397);
-  position: relative;
-  padding-bottom: 100px;
-  min-height: 100vh;
-}
-
-/* Quitar las viñetas de las listas */
-ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-p {
-  margin: 1px;
-  padding: 1px;
-  text-align: center;
-}
-
-.vista_mobile {
-  display: none;
 }
 
 /* fondo seccion de informacion primer pagina */
@@ -252,6 +140,104 @@ p {
   color: #EEEEEE;
   opacity: 96%;
   font-size: 18px;
+}
+
+.caja_serv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "serv1 serv2" "serv3 serv4" "serv5 serv6";
+}
+
+.serv1 {
+  margin: 5px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "name_c name_c" "text_testimonio text_testimonio";
+}
+
+.serv2 {
+  margin: 5px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "name_c name_c" "text_testimonio text_testimonio";
+}
+
+.serv3 {
+  margin: 5px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "name_c name_c" "text_testimonio text_testimonio";
+}
+
+.serv4 {
+  margin: 5px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "name_c name_c" "text_testimonio text_testimonio";
+}
+
+.serv5 {
+  margin: 5px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "name_c name_c" "text_testimonio text_testimonio";
+}
+
+.serv6 {
+  margin: 5px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "name_c name_c" "text_testimonio text_testimonio";
+}
+
+.boton_iniciar {
+  padding: 0;
+  border-style: none;
+  cursor: pointer;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.boton_iniciar:hover {
+  background-color: #FFAA4C;
+  letter-spacing: 1px;
 }
 
 /* video informativo primer pagina */
@@ -432,6 +418,87 @@ p {
 /* ************************************************************* */
 /* Media Querys */
 /* ************************************************************* */
+/* footer */
+/* footer fondo imagen y enlaces a redes a sociales */
+.fin_pag {
+  max-width: auto;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  opacity: 80%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* logo del footer */
+  /* politicas */
+  /* enlaces para redes sociales */
+}
+
+.fin_pag .pie_logo {
+  border: 10px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  opacity: 100%;
+  border-radius: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline;
+}
+
+.fin_pag .politicas {
+  color: black;
+  font-size: smaller;
+  border: 10px;
+  width: auto;
+  height: auto;
+  font-style: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fin_pag .social_media {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fin_pag .social_media .nav_social {
+  color: #035397;
+  text-decoration: none;
+  padding: 00.5rem;
+  font-size: 12px;
+}
+
+/* finaliza footer */
+/*******************************************************/
+.vista_mobile {
+  display: none;
+}
+
 /* Tablet */
 @media screen and (max-width: 915px) {
   .contenedor_encabezado {
@@ -654,5 +721,36 @@ p {
   .titulo {
     font-size: 30px;
   }
+}
+
+/* Reseteo */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* color al cuerpo de la pag */
+body {
+  background: #004e92;
+  background: -webkit-gradient(linear, left bottom, left top, from(#004e92), to(#035397));
+  background: linear-gradient(to top, #004e92, #035397);
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+/* Quitar las viñetas de las listas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 1px;
+  padding: 1px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
