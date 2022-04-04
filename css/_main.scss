@@ -18,6 +18,7 @@
 
 /* edicion de los titulos primer pagina */
 .titulo{
+    margin-top: 5px;
    text-align: center;
     color: #FFAA4C;
     font-style: italic;
@@ -43,81 +44,104 @@
     font-size: 18px;
 }
 
-.caja_serv{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "serv1 serv2"
-    "serv3 serv4"
-    "serv5 serv6";
+.img_index{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.alineado{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.name_serv{
+    grid-area: name_serv;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+    color: #FFAA4C;
+    font-style: italic;
+    opacity: 100%;
+    font-size: 30px;
+}
+
+.text_serv{
+    margin: 1px;
+    padding: 1px;
+    width: auto;
+    height: auto;
+    grid-area: text_serv;
+    color: #EEEEEE;
 }
 
 .serv1{
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name_c name_c"
-    "text_testimonio text_testimonio";
+    "name_serv name_serv"
+    "text_serv text_serv";
 }
 
 .serv2{
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name_c name_c"
-    "text_testimonio text_testimonio";
+    "name_serv name_serv"
+    "text_serv text_serv";
 }
 
 .serv3{
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name_c name_c"
-    "text_testimonio text_testimonio";
+    "name_serv name_serv"
+    "text_serv text_serv";
 }
 
 .serv4{
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name_c name_c"
-    "text_testimonio text_testimonio";
+    "name_serv name_serv"
+    "text_serv text_serv";
 }
 
 .serv5{
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name_c name_c"
-    "text_testimonio text_testimonio";
+    "name_serv name_serv"
+    "text_serv text_serv";
 }
 
 .serv6{
     margin: 5px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name_c name_c"
-    "text_testimonio text_testimonio";
+    "name_serv name_serv"
+    "text_serv text_serv";
 }
+
 
 
 
@@ -137,9 +161,9 @@
 
 /* video informativo primer pagina */
 .material_ad{
-    width: auto;
+    width: 100%;
     margin: 50px;
-    padding: 10px;
+    padding: 1px;
     border: #FFAA4C 3px;
     border-radius: 3px;
 
@@ -285,13 +309,19 @@
 /* configuracion texto del testimonio */
  .text_testimonio{
      margin: 1px;
+     padding: 1px;
      width: auto;
      height: auto;
      grid-area: text_testimonio;
      color: #EEEEEE;
  }
 
-/* ************************************************************* */
- /* Media Querys */
-/* ************************************************************* */
-
+ .lista{
+     list-style-type: circle;
+     padding-left: 3rem;
+     text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 25px;
+     color: #EEEEEE;
+     padding: 5rem;
+ }
