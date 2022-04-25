@@ -113,13 +113,16 @@
                 </div>
 
                 <div class="row g-2">
-                  <div class="col-sm-1">
-                      <input type="tel" class="form-control" placeholder="Lada" aria-label="Lada">
-                    </div>
                   <div class="col-sm-5">
-                    <input type="tel" class="form-control" placeholder="Telefono" aria-label="Telefono">
+                    <label for="formGroupExampleInput" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="Ej: (55) 12345678" aria-label="Telefono">
                   </div>
-                  
+                    
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email / Correo</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
                     <select class="form-select" aria-label="Default select example">
                       <option selected>Quiero informacion acerca:</option>
                       <option value="1"> Cotizacion Fotografia </option>
@@ -127,19 +130,15 @@
                       <option value="3"> Cotizacion Edicion</option>
                       <option value="4"> Cotizacion Pagina Web</option>
                     </select>
-                    
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label">Email / Correo</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
+
                     <div class="mb-3">
                       <label for="exampleFormControlTextarea1" class="form-label">Platicanos un poco de tu proyecto:</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
 
                     <div class="d-grid gap-2 d-md-block">
-                      <button class="boton " type="button">Enviar</button>
-                      <button class="boton " type="reset">Limpiar</button>
+                      <button class="boton_enviar" type="button">Enviar</button>
+                      <button class="boton" type="reset">Limpiar</button>
                     </div>
                   
        </fieldset>

@@ -74,7 +74,7 @@
   color: #FFAA4C;
 }
 
-.contenedor_encabezado .encabezado .nav_enlace:after {
+.contenedor_encabezado .encabezado .nav_enlace::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -350,6 +350,30 @@
   color: #FFAA4C;
 }
 
+.boton_enviar {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #004e92;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  background-color: #FFAA4C;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+.boton_enviar:hover {
+  color: #EEEEEE;
+}
+
 /* ************************************************* */
 /* Testimonios */
 /* ************************************************* */
@@ -551,15 +575,27 @@
 }
 
 /* Tablet */
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 940px) {
   .contenedor_encabezado {
-    height: auto;
+    display: none;
   }
-  .encabezado {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .offcanvas-title {
+    color: #FFAA4C;
+    font-size: 40px;
+  }
+  .offcanvas-body {
+    background-color: #EEEEEE;
+    opacity: 90%;
+  }
+  .contenedor_encabezado {
+    display: none;
+  }
+  .vista_mobile {
+    display: block;
+    margin: auto;
+  }
+  .medio {
+    margin-top: 90px;
   }
   .fin_pag {
     max-width: 1200px;
@@ -734,9 +770,6 @@
 
 /* Mobile */
 @media screen and (max-width: 740px) {
-  .contenedor_encabezado {
-    display: none;
-  }
   .offcanvas-title {
     color: #FFAA4C;
     font-size: 40px;
@@ -754,10 +787,6 @@
     text-decoration: none;
     color: #035397;
   }
-  .vista_mobile {
-    display: block;
-    margin: auto;
-  }
   .menu_item {
     margin: 1px;
   }
@@ -765,9 +794,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px;
-  }
-  .medio {
-    margin-top: 90px;
   }
   .titulo {
     font-size: 30px;

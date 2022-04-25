@@ -223,6 +223,30 @@
     }
   }
 
+  .boton_enviar{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #004e92;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #FFAA4C;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+
+    &:hover{
+        color: #EEEEEE;
+    
+    }
+  }
+
 
 
 
@@ -325,3 +349,4 @@
      color: #EEEEEE;
      padding: 5rem;
  }
+
